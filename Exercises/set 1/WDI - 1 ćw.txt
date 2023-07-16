@@ -1,0 +1,47 @@
+Zadanie 1. Proszę napisać program wypisujący elementy ciągu Fibonacciego mniejsze od miliona.
+
+a=1
+b=1
+while a<1000000
+	print(a)
+	a*=b
+	print(b)
+	b+=a
+
+Zadanie 3. Proszę napisać program sprawdzający czy istnieje spójny podciąg ciągu Fibonacciego o zadanej
+sumie.
+
+first1 = 1
+first2 = 1
+current1 = 1
+current2 = 1
+sum = 1
+s=int(input('>'))
+if sum != s:
+	while s < s:
+		sum += current2
+		current1, current2 = current2, current1 + current 2
+		while sum > s:
+			sum -= first1
+			tmp = first1
+			first1 =first2
+			first2 =+tmp
+			if first2 == current2:
+				print('nie istnieje')
+				exit(0)
+		if sum == s:
+			print("istnieje")
+			exit(0)
+else:
+	print('istnieje')
+	exit(0)
+
+Zadanie 4. Proszę napisać program obliczający pierwiastek całkowitoliczbowy z liczby naturalnej korzystając z zależności 1 + 3 + 5 + ... = n^2
+
+inp=int(input('>'))
+sum=1
+n=1
+while sum<=inp:
+	sum+=2*n+1
+	n+=1
+print(n-1)
